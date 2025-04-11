@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body {
+    background: linear-gradient(#AFEEEE, #48D1CC);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+
+header{
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.iconTop{
+    width: 10%;
+    position: absolute;   
+    left: 0; 
+}
+
+footer{
+    width: 1200px;
+    margin: 0px auto;
+}
