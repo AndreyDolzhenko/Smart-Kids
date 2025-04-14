@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./src/style.css" />
     <link
       type="Image/x-icon"
-      href="./img/free-icon-children-3885025.png"
+      href="./assets/img/free-icon-children-3885025.png"
       rel="icon"
     />
     <title>Smart Kids</title>
@@ -15,17 +15,32 @@
     <header>
       <img
         class="iconTop"
-        src="./img/free-icon-children-769651.png"
+        src="./assets/img/free-icon-children-769651.png"
         alt="children"
       />
-      <img src="./img/smartkids.png" alt="smartkids" width="50%" />
+      <div>
+        <img src="./assets/img/smartkids.png" alt="smartkids" width="150%" />
+        <div style="height: 50px;">
+          
+        </div>
+      </div>
     </header>
-
+    <main>
+      <div class="leftMenu">
+        <div id="topics" class="activeMenu">Содержание курса:</div>
+        <ol id="listOfTopics"></ol>
+      </div>
+      <div class="mainContent">
+        <div id="content" class="passiveMenu">Проекты учеников:</div>
+      </div>
+    </main>
     <footer>
       <div>Ресурсы:</div>
       <a href="https://www.flaticon.com/ru/free-icons/" title="школа иконки"
         >Школа иконки от Freepik - Flaticon</a
       >
     </footer>
+    <script src="./src/topicsDescription.js"></script>
+    <script src="./src/main.js"></script>
   </body>
 </html>
