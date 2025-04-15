@@ -42,7 +42,7 @@ main{
 
 .activeMenu{
     height: 30px;
-    background: antiquewhite;
+    background: burlywood;
     border-bottom: 1px solid salmon;
     text-align: center;
     padding: 3px;
@@ -62,6 +62,10 @@ main{
     cursor: pointer;
 }
 
+.passiveMenu:hover{
+    background: burlywood;
+}
+
 #topics{    
         
     border-right: 1px solid salmon;    
@@ -69,8 +73,12 @@ main{
     margin-right: 2px;    
 }
 
-#topics:hover{
-    background: burlywood;
+.listOfTopicsItem{
+    margin: 10px 0 10px 25px;
+    font-size: 20px;
+    color: saddlebrown;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .mainContent{
@@ -81,10 +89,6 @@ main{
     border-left: 1px solid salmon;
     border-radius: 0 0 0 5px;
     margin-left: 2px;
-}
-
-#content:hover{
-    background: burlywood;
 }
 
 footer{
