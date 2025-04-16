@@ -76,7 +76,7 @@ main{
 .listOfTopicsItem{
     margin: 10px 0 10px 25px;
     font-size: 20px;
-    color: saddlebrown;
+    color: antiquewhite;
     font-weight: 600;
     cursor: pointer;
 }
@@ -89,6 +89,12 @@ main{
     border-left: 1px solid salmon;
     border-radius: 0 0 0 5px;
     margin-left: 2px;
+}
+
+#descriptionOfChoiseTopic{
+    font-size: 18px;
+    line-height: 1.5;    
+    margin: 15px;
 }
 
 footer{
