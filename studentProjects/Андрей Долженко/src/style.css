@@ -1,0 +1,17 @@
+.schoolSubjectsImg{
+    width: 150px;
+    height: 200px;
+    display: inline;    
+    margin: 0 0 0 -50px;
+    border: 2px solid cadetblue;
+}
+
+#chemic, #history, #mathem, #russian_lang {
+    cursor: pointer;
+}
+
+#chemic:hover, #history:hover, #mathem:hover, #russian_lang:hover {
+    z-index: 2;
+    position: sticky;
+}
+
