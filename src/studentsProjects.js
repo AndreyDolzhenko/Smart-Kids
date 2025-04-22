@@ -1,4 +1,6 @@
-const nameOfProject = ["Андрей Долженко", "Lena", "Ivan", "Nikita", "Maria", "Vika", ];
+const nameOfProject = ["Андрей Долженко", "Lena", ];
+
+const nameOfCreditProject = ["Андрей Долженко", ];
 
 
 

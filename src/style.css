@@ -5,8 +5,11 @@
 }
 
 body {
+    background: #48D1CC;    
+}
+
+.basePlace{
     background: linear-gradient(#AFEEEE, #48D1CC);
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,10 +24,11 @@ header{
     position: relative;
 }
 
-.iconTop{
+#iconTop{
     width: 10%;
     position: absolute;   
     left: 0; 
+    cursor: pointer;
 }
 
 main{
@@ -37,7 +41,11 @@ main{
 
 .leftMenu{
     width: 15%;
-    border-right: 1px solid salmon;    
+    border-right: 1px solid salmon; 
+    min-height: 500px;
+    max-height: 500px;
+    overflow: auto;
+    scrollbar-color: rgba(255, 255, 255, 0.21) transparent;   
 }
 
 .activeMenu{
@@ -52,6 +60,7 @@ main{
 }
 
 .passiveMenu{
+    width: 50%;
     height: 30px;
     background: antiquewhite;
     border-bottom: 1px solid salmon;
@@ -82,13 +91,21 @@ main{
 }
 
 .mainContent{
-    width: 85%;    
+    width: 85%;     
 }
 
-#content{    
+#content, #credit{    
     border-left: 1px solid salmon;
     border-radius: 0 0 0 5px;
     margin-left: 2px;
+}
+
+#credit{
+    margin-left: 0;
+}
+
+#content:hover, #credit:hover, #topics:hover {
+    background: burlywood;
 }
 
 #descriptionOfChoiseTopic{
@@ -104,7 +121,13 @@ main{
     font-size: 20px;
 }
 
+.projectsMenu{
+    display: flex;
+}
+
 footer{
     width: 1200px;
     margin: 0px auto;
+    border-top: 1px solid seashell;
+    margin-top: 5px;
 }

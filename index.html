@@ -12,36 +12,61 @@
     <title>Smart Kids</title>
   </head>
   <body>
-    <header>
-      <img
-        class="iconTop"
-        src="./assets/img/free-icon-children-769651.png"
-        alt="children"
-      />
-      <div>
-        <img src="./assets/img/smartkids.png" alt="smartkids" width="150%" />
-        <div style="height: 50px;">
-          
+    <div class="basePlace">
+      <header>
+        <img
+          id="iconTop"
+          src="./assets/img/free-icon-children-769651.png"
+          alt="children"
+          title="Описание проекта"
+        />
+        <div>
+          <img src="./assets/img/smartkids.png" alt="smartkids" width="150%" />
+          <div style="height: 50px"></div>
         </div>
-      </div>
-    </header>
-    <main>
-      <div class="leftMenu">
-        <div id="topics" class="activeMenu">Содержание курса:</div>
-        <ol id="listOfTopics"></ol>
-      </div>
-      <div class="mainContent">
-        <div id="content" class="passiveMenu" >Проекты учеников:</div>
-        <div id="descriptionOfChoiseTopic">Выберите урок, чтобы ознакомиться с его содержанием.</div>
-        <ul id="placeForProjects">Здесь размещены работы учеников:</ul>        
-      </div>
-    </main>
-    <footer>
-      <div>Ресурсы:</div>
-      <a href="https://www.flaticon.com/ru/free-icons/" title="школа иконки"
-        >Школа иконки от Freepik - Flaticon</a
-      >
-    </footer>
+      </header>
+      <main>
+        <div class="leftMenu">
+          <div id="topics" class="activeMenu">Содержание курса:</div>
+          <div class="listOfTopicsItem" style="cursor: default">HTML, CSS</div>
+          <ul id="listOfTopics" style="list-style: none"></ul>
+          <div class="listOfTopicsItem" style="cursor: default">JavaScript</div>
+        </div>
+        <div class="mainContent">
+          <div class="projectsMenu">
+            <div id="content" class="passiveMenu">Проекты учеников:*</div>
+            <div id="credit" class="passiveMenu">Зачетные работы:</div>
+          </div>
+          <div
+            style="
+              min-height: 500px;
+              max-height: 500px;
+              overflow: auto;
+              scrollbar-color: rgba(255, 255, 255, 0.21) transparent;
+            "
+          >
+            <div id="descriptionOfChoiseTopic"></div>
+            <ul id="placeForProjects">
+              Здесь размещены работы учеников:
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div>
+          <h4>Соглашения:</h4>
+          * Все проекты учеников и содержание проектов размещены с согласия и
+          под контролем их родителей.<br />
+          &nbsp;&nbsp;&nbsp;Любой проект или его часть может быть удалена из
+          портала "Умные дети" без согласия и уведомления ученика либо его
+          родителей.
+        </div>
+        <h4>Ресурсы:</h4>
+        <a href="https://www.flaticon.com/ru/free-icons/" title="школа иконки"
+          >Школа иконки от Freepik - Flaticon</a
+        >
+      </footer>
+    </div>
     <script src="./src/studentsProjects.js"></script>
     <script src="./src/topicsDescription.js"></script>
     <script src="./src/main.js"></script>
