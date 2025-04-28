@@ -1,0 +1,47 @@
+#face {
+    width: 300px;
+    height: 300px;
+    background: yellow;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+}
+
+#mouth{
+    width: 100px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    top: 40%;
+    right: 48px;
+    transform: rotate(54deg) translate(60px, -60px);  
+    /* border-left: 1px solid;     */
+}
+#mouth:hover{    
+    transition: all 1s ease-in-out; 
+    transform: rotate(54deg) translate(80px, -120px);  
+    border-left: 0px solid;
+    opacity: 0; 
+}
+
+#mouth:focus{    
+    transition: all 1s ease-in-out; 
+    transform: rotate(54deg) translate(60px, -60px);  
+    border-left: 0px solid;
+    opacity: 0; 
+}
+
+#close{
+    width: 100%;
+    height: 100%;   
+    border-left: 1px solid;
+}
+
+#close:hover{
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    transform: rotate(40deg) translate(40px, 50px);
+    border-left: 1px solid;
+    opacity: 0;
+}
