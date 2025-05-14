@@ -1,133 +1,146 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 body {
-    background: #48D1CC;    
+  background: #48d1cc;
 }
 
-.basePlace{
-    background: linear-gradient(#AFEEEE, #48D1CC);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px 0 20px 0;
+.basePlace {
+  background: linear-gradient(#afeeee, #48d1cc);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
 }
 
-header{
-    width: 1200px;
-    margin: 0px auto;
-    display: flex;
-    justify-content: center;
-    position: relative;
+header {
+  width: 1200px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
-#iconTop{
-    width: 10%;
-    position: absolute;   
-    left: 0; 
-    cursor: pointer;
+#iconTop {
+  width: 10%;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
 }
 
-main{
-    width: 1200px;
-    height: 85%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+main {
+  width: 1200px;
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
-.leftMenu{
-    width: 15%;
-    border-right: 1px solid salmon; 
-    min-height: 500px;
-    max-height: 500px;
-    overflow: auto;
-    scrollbar-color: rgba(255, 255, 255, 0.21) transparent;   
+.leftMenu {
+  width: 15%;
+  border-right: 1px solid salmon;
+  min-height: 500px;
+  max-height: 500px;
+  overflow: auto;
+  scrollbar-color: rgba(255, 255, 255, 0.21) transparent;
 }
 
-.activeMenu{
-    height: 30px;
-    background: burlywood;
-    border-bottom: 1px solid salmon;
-    text-align: center;
-    padding: 3px;
-    font-size: 18px;
-    color: saddlebrown;
-    cursor: pointer;
+.activeMenu {
+  height: 30px;
+  background: burlywood;
+  border-bottom: 1px solid salmon;
+  text-align: center;
+  padding: 3px;
+  font-size: 18px;
+  color: saddlebrown;
+  cursor: pointer;
 }
 
-.passiveMenu{
-    width: 50%;
-    height: 30px;
-    background: antiquewhite;
-    border-bottom: 1px solid salmon;
-    text-align: center;
-    padding: 3px;
-    font-size: 18px;
-    color: saddlebrown;
-    cursor: pointer;
+.passiveMenu {
+  width: 50%;
+  height: 30px;
+  background: antiquewhite;
+  border-bottom: 1px solid salmon;
+  text-align: center;
+  padding: 3px;
+  font-size: 18px;
+  color: saddlebrown;
+  cursor: pointer;
 }
 
-.passiveMenu:hover{
-    background: burlywood;
+.passiveMenu:hover {
+  background: burlywood;
 }
 
-#topics{    
-        
-    border-right: 1px solid salmon;    
-    border-radius: 0 0 5px 0; 
-    margin-right: 2px;    
+#topics {
+  border-right: 1px solid salmon;
+  border-radius: 0 0 5px 0;
+  margin-right: 2px;
 }
 
-.listOfTopicsItem{
-    margin: 10px 0 10px 25px;
-    font-size: 20px;
-    color: antiquewhite;
-    font-weight: 600;
-    cursor: pointer;
+.listOfTopicsItem {
+  margin: 10px 0 10px 25px;
+  font-size: 20px;
+  color: antiquewhite;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-.mainContent{
-    width: 85%;     
+.mainContent {
+  width: 85%;
 }
 
-#content, #credit{    
-    border-left: 1px solid salmon;
-    border-radius: 0 0 0 5px;
-    margin-left: 2px;
+#content,
+#credit {
+  border-left: 1px solid salmon;
+  border-radius: 0 0 0 5px;
+  margin-left: 2px;
 }
 
-#credit{
-    margin-left: 0;
+#credit {
+  margin-left: 0;
 }
 
-#content:hover, #credit:hover, #topics:hover {
-    background: burlywood;
+#content:hover,
+#credit:hover,
+#topics:hover {
+  background: burlywood;
 }
 
-#descriptionOfChoiseTopic{
-    font-size: 18px;
-    line-height: 1.5;    
-    margin: 15px;
+#descriptionOfChoiseTopic {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 15px;
 }
 
-#placeForProjects{
-    
-    width: 100%;
-    margin: 15px 10px 10px 25px;
-    font-size: 20px;
+#placeForProjects {
+  width: 100%;
+  margin: 15px 10px 10px 25px;
+  font-size: 20px;
 }
 
-.projectsMenu{
-    display: flex;
+.projectsMenu {
+  display: flex;
 }
 
-footer{
-    width: 1200px;
-    margin: 0px auto;
-    border-top: 1px solid seashell;
-    margin-top: 5px;
+footer {
+  width: 1200px;
+  height: 150px;
+  margin: 0px auto;
+  border-top: 1px solid seashell;
+  margin-top: 5px;
+  display: flex;
+}
+
+#localMap {
+  overflow: hidden;
+  margin: 5px;
+}
+#localMap:hover{
+  cursor: pointer;
+  margin-top: -200px;
+  transition: all 1s ease-in-out;
 }
