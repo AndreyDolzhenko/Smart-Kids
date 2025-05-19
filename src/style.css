@@ -138,9 +138,33 @@ footer {
 #localMap {
   overflow: hidden;
   margin: 5px;
+  transition: all 2s ease-in-out;
+  position: relative;
 }
-#localMap:hover{
+#localMap:hover {
+  position: relative;
   cursor: pointer;
   margin-top: -200px;
   transition: all 1s ease-in-out;
+}
+
+.localMapIn {
+  cursor: pointer;
+  margin-top: -200px;
+  transition: all 1s ease-in-out;
+}
+
+.localMapOut {
+  cursor: pointer;
+  margin-top: -200px;
+  transition: all 1s ease-in-out;
+}
+
+#intoMap {  
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  background: antiquewhite;
+  padding: 3px;
+  color: brown;
 }
