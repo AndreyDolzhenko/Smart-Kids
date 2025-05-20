@@ -5,18 +5,42 @@ const credit = document.getElementById("credit");
 const placeForProjects = document.getElementById("placeForProjects");
 const listOfTopicsItem = document.getElementsByClassName("listOfTopicsItem");
 const iconTop = document.getElementById("iconTop");
+const intoMap = document.getElementById("intoMap");
+const localMap = document.getElementById("localMap");
 
+intoMap.addEventListener("touchend", (event) => {
+  console.log(localMap.className);
 
-intoMap.addEventListener("touchstart", (event) => {
-  if ((localMap.className = "localMapOut")) {
-    intoMap.innerHTML = "Закрыть карту";
-    localMap.classList.remove("localMapOut");
-    localMap.classList.add("localMapIn");
-  } else {
-    intoMap.innerHTML = "Открыть карту";
-    localMap.classList.remove("localMapIn");
-    localMap.classList.add("localMapOut");
+  switch (localMap.className) {
+    case "localMapOut":
+      intoMap.innerHTML = "Закрыть карту";
+      localMap.classList.remove("localMapOut");
+      localMap.classList.add("localMapIn");
+      break;
+
+    case "localMapIn":
+      intoMap.innerHTML = "Открыть карту";
+      localMap.classList.remove("localMapIn");
+      localMap.classList.add("localMapOut");
+      break;
+
+    default:
+      break;
   }
+});
+
+localMap.addEventListener("mouseover", (event) => {
+  console.log(localMap.className);
+  intoMap.innerHTML = "Закрыть карту";
+  localMap.classList.remove("localMapOut");
+  localMap.classList.add("localMapIn");
+});
+
+localMap.addEventListener("mouseout", (event) => {
+  console.log(localMap.className);
+  intoMap.innerHTML = "Открыть карту";
+  localMap.classList.remove("localMapIn");
+  localMap.classList.add("localMapOut");
 });
 
 const descriptionOfChoiseTopic = document.getElementById(
