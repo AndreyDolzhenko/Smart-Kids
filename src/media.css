@@ -1,0 +1,93 @@
+/* @media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+*/
+
+@media screen and (max-width: 1000px) {
+  .imgBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
+  }
+
+  .nothinMobile {
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: italic;
+    color: brown;
+    right: -250px;
+  }
+
+  .basePlace {
+    width: 100%;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  #localMap {
+    position: absolute;
+    right: -500px;
+  }
+
+  .localMapInMobile {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    /* margin-top: -200px; */
+    transition: all 1s ease-in-out;
+  }
+
+  .listOfTopicsItem:active {
+    #listOfTopics {
+      background-color: red;
+    }
+  }
+
+  #openLeftMenu {
+    display: block;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    transform: rotate(90deg);
+  }
+
+  .leftMenu {
+    width: 20%;
+    margin-left: -150px;
+    position: relative;
+  }
+  .leftMenuMobileOpen {
+    width: 50%;
+    height: 94%;
+    margin-left: 0px;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.9;
+    background: aliceblue;
+  }
+
+  #listOfTopics:active {
+    all: initial;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .leftMenu {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .leftMenu {
+    width: 60%;
+  }
+}

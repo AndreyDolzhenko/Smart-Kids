@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/media.css">
     <link
       type="Image/x-icon"
       href="./assets/img/free-icon-children-3885025.png"
@@ -12,7 +13,11 @@
     <title>Smart Kids</title>
   </head>
   <body>
-    <div class="basePlace">
+    <div class="basePlace">      
+      <div class="topMenu">
+        <span class="topMenuItem" onclick="activeLinc()">Библиотека</span>
+        <a id="libraryLink" href="#" target="_blank">Перейти</a>
+      </div>
       <header>
         <img
           id="iconTop"
@@ -20,14 +25,15 @@
           alt="children"
           title="Описание проекта"
         />
-        <div>
-          <img src="./assets/img/smartkids.png" alt="smartkids" width="150%" />
-          <div style="height: 50px"></div>
+        <div class="imgBox">
+          <img class="SKlogo" src="./assets/img/smartkids.png" alt="smartkids" />         
         </div>
+        <div id="nothingID" class="nothing" class="nothinMobile">Nothing is impossible!</div>
       </header>
       <main>
-        <div class="leftMenu">
-          <div id="topics" class="activeMenu">Содержание курса:</div>
+        <div class="leftMenu" tabindex = "1";>
+          <div id="topics" class="activeMenu">Содержание</div>
+          <img id="openLeftMenu" src="./assets/img/open-svgrepo-com.svg" alt="open">
           <div class="listOfTopicsItem" style="cursor: default">HTML, CSS</div>
           <ul id="listOfTopics" style="list-style: none"></ul>
           <div class="listOfTopicsItem" style="cursor: default">JavaScript</div>
@@ -38,12 +44,7 @@
             <div id="credit" class="passiveMenu">Зачетные работы:</div>
           </div>
           <div
-            style="
-              min-height: 500px;
-              max-height: 500px;
-              overflow: auto;
-              scrollbar-color: rgba(255, 255, 255, 0.21) transparent;
-            "
+            class="contentDesc"
           >
             <div id="descriptionOfChoiseTopic"></div>
             <ul id="placeForProjects">
@@ -53,14 +54,14 @@
         </div>
       </main>
       <footer>
-        <div style="width: 80%; padding: 10px;">
+        <div style="width: 80%; padding: 10px">
           <div>
             <h4>Соглашения:</h4>
             * Все проекты учеников и содержание проектов размещены с согласия и
             под контролем их родителей.<br />
-            * Любой проект или его часть может быть удалена из
-            портала "Умные дети" без согласия и уведомления <br>&nbsp;&nbsp;&nbsp;ученика либо его
-            родителей.
+            * Любой проект или его часть может быть удалена из портала "Умные
+            дети" без согласия и уведомления <br />&nbsp;&nbsp;&nbsp;ученика
+            либо его родителей.
           </div>
           <h4>Ресурсы:</h4>
           <a
@@ -70,9 +71,41 @@
             >Школа иконки от Freepik - Flaticon</a
           >
         </div>
-        <div id="localMap" class="localMapOut" title="Кольцовская улица, 9, Воронеж">
+        <div
+          id="localMap"
+          class="localMapOut"
+          title="Кольцовская улица, 9, Воронеж"
+        >
           <div id="intoMap">открыть карту</div>
-          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/193/voronezh/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;cursor: pointer;">Воронеж</a><a href="https://yandex.ru/maps/193/voronezh/house/koltsovskaya_ulitsa_9/Z0AYdAdiQE0FQFtrfXp2d35qZw==/?ll=39.202982%2C51.676293&utm_medium=mapframe&utm_source=maps&z=16.81" style="color:#eee;font-size:12px;position:absolute;top:14px;">Кольцовская улица, 9 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=39.202982%2C51.676293&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzg3NTA3ORJC0KDQvtGB0YHQuNGPLCDQktC-0YDQvtC90LXQtiwg0JrQvtC70YzRhtC-0LLRgdC60LDRjyDRg9C70LjRhtCwLCA5IgoN2s8cQhWGtE5C&z=16.81" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative; cursor: pointer;"></iframe></div>
+          <div style="position: relative; overflow: hidden">
+            <a
+              href="https://yandex.ru/maps/193/voronezh/?utm_medium=mapframe&utm_source=maps"
+              style="
+                color: #eee;
+                font-size: 12px;
+                position: absolute;
+                top: 0px;
+                cursor: pointer;
+              "
+              >Воронеж</a
+            ><a
+              href="https://yandex.ru/maps/193/voronezh/house/koltsovskaya_ulitsa_9/Z0AYdAdiQE0FQFtrfXp2d35qZw==/?ll=39.202982%2C51.676293&utm_medium=mapframe&utm_source=maps&z=16.81"
+              style="
+                color: #eee;
+                font-size: 12px;
+                position: absolute;
+                top: 14px;
+              "
+              >Кольцовская улица, 9 — Яндекс Карты</a
+            ><iframe
+              src="https://yandex.ru/map-widget/v1/?ll=39.202982%2C51.676293&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzg3NTA3ORJC0KDQvtGB0YHQuNGPLCDQktC-0YDQvtC90LXQtiwg0JrQvtC70YzRhtC-0LLRgdC60LDRjyDRg9C70LjRhtCwLCA5IgoN2s8cQhWGtE5C&z=16.81"
+              width="560"
+              height="400"
+              frameborder="1"
+              allowfullscreen="true"
+              style="position: relative; cursor: pointer"
+            ></iframe>
+          </div>
         </div>
       </footer>
     </div>
