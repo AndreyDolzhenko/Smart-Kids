@@ -6,12 +6,38 @@
 */
 
 @media screen and (max-width: 1000px) {
+
+  a, footer, .activeMenu {
+    font-size: 12px;
+  }
+
   .imgBox {
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 20px 0 10px 0;
   }
+
+  .passiveMenu {
+  width: 50%;
+  height: 30px;
+  background: antiquewhite;
+  border-bottom: 1px solid salmon;
+  text-align: center;
+  padding: 3px;
+  font-size: 12px;
+  color: saddlebrown;
+  cursor: pointer;
+}
+
+#descriptionOfChoiseTopic {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 15px;
+  max-height: 500px;
+  min-height: 500px;
+}
+
 
   .nothinMobile {
     position: absolute;
@@ -81,6 +107,8 @@
 }
 
 @media screen and (max-width: 800px) {
+  
+
   .leftMenu {
     width: 30%;
   }
