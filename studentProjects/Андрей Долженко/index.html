@@ -182,5 +182,17 @@
         </div>        
       </div>
     </div>
+
+    <canvas id="canvas" width="800px" height="600px"></canvas>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const c = canvas.getContext("2d");
+      c.fillStyle = "red";
+      c.fillRect(100,30,400,50);
+      canvas.addEventListener("click", (event) => {
+        console.log(event);
+      });
+    </script>
+
   </body>
 </html>
